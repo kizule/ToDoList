@@ -28,7 +28,7 @@ class ToDoListHooks {
 	public static function processToDoListTag( $input, array $args, $parser, PPFrame $frame ) {
 		$out = $parser->getOutput();
 		\OutputPage::setupOOUI();
-		$out->enableOOUI();
+		$out->setEnableOOUI( true );
 		$out->addModules( [ 'ext.ToDoList' ] );
 
 		$isDone = false;
