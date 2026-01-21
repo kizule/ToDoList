@@ -1,6 +1,5 @@
 <?php
 
-use MediaWiki\Output\OutputPage;
 use OOUI\CheckboxInputWidget;
 
 /**
@@ -28,7 +27,7 @@ class ToDoListHooks {
 	 */
 	public static function processToDoListTag( $input, array $args, $parser, PPFrame $frame ) {
 		$out = $parser->getOutput();
-		OutputPage::setupOOUI();
+		\OutputPage::setupOOUI();
 		$out->enableOOUI();
 		$out->addModules( [ 'ext.ToDoList' ] );
 
