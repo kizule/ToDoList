@@ -9,7 +9,7 @@
 	"license-name": "MIT",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"MessagesDirs": {
 		"ToDoList": [
@@ -17,7 +17,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"ToDoListHooks": "includes/ToDoList.hooks.php"
+		"ToDoListHooks": "includes/ToDoListHooks.php"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "ToDoListHooks::onParserSetup"
